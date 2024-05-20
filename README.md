@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Live Site
 
-[https://aeon-assessment.vercel.app/](https://aeon-assessment.vercel.app/)
+[https://aeon-assesment.radziramli.com/](https://aeon-assesment.radziramli.com/)
 
 ## Getting Started
 
