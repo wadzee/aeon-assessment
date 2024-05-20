@@ -25,8 +25,8 @@ export default function Home() {
       <section className="sm:m-auto">
         <h1>Aeon Assessment</h1>
         <ol className="flex flex-col gap-4 mt-12 max-w-[500px] !list-decimal px-4">
-          {links.map(({ label, link }) => (
-            <li>
+          {links.map(({ label, link }, idx) => (
+            <li key={idx}>
               <Link href={link}>{label}</Link>
             </li>
           ))}
