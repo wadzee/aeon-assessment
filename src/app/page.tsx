@@ -1,22 +1,5 @@
 import Link from "next/link";
-
-const links = [
-  {
-    label: `Create a React (preferably NextJs) page with any design that
-    works like a calculator that can add two numbers.
-    `,
-    link: "/calculator",
-  },
-  {
-    label: `Create a blank page using React (preferably NextJs) that contains
-    the navbar`,
-    link: "/navbar",
-  },
-  {
-    label: "Two Sum II - Input Array Is Sorted",
-    link: "/twosums",
-  },
-];
+import homeLinks from "@/constant/home_links.json";
 
 export default function Home() {
   return (
@@ -24,7 +7,7 @@ export default function Home() {
       <section className="sm:m-auto">
         <h1>Aeon Assessment</h1>
         <ol className="flex flex-col gap-4 mt-12 max-w-[500px] !list-decimal px-4">
-          {links.map(({ label, link }, idx) => (
+          {homeLinks.map(({ label, link }, idx) => (
             <li key={idx}>
               <Link href={link}>{label}</Link>
             </li>

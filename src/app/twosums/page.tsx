@@ -31,11 +31,11 @@ export default function TwoSumsPage() {
   };
 
   return (
-    <main className="flex flex-col h-screen">
-      <nav className="container mx-auto p-5">
+    <main className="flex flex-col h-screen px-5">
+      <nav className="container mx-auto py-5">
         <Link href="/">Go Back</Link>
       </nav>
-      <div className="m-auto w-[400px]">
+      <div className="m-auto w-full max-w-[400px]">
         <h1 className="my-6">Find Two Sum</h1>
         <form className="flex flex-col gap-6" onSubmit={handleSubmit}>
           <p>Numbers (comma-separated): </p>

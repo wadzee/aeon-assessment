@@ -5,7 +5,6 @@ export function Footer() {
     <footer className="bottom-0 p-5 w-full">
       <div className="container mx-auto flex justify-between">
         <ul className="flex w-full gap-6 items-center">
-          {}
           <li className="flex-grow">
             Completed by{" "}
             <Link href="https://radziramli.com" target="_blank">

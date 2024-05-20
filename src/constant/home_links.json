@@ -1,0 +1,14 @@
+[
+  {
+    "label": "Create a React (preferably NextJs) page with any design that works like a calculator that can add two numbers.",
+    "link": "/calculator"
+  },
+  {
+    "label": "Create a blank page using React (preferably NextJs) that contains the navbar",    
+    "link": "/navbar"
+  },
+  {
+    "label": "Two Sum II - Input Array Is Sorted",
+    "link": "/twosums"
+  }
+]

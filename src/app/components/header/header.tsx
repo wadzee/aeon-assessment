@@ -2,37 +2,7 @@
 import classNames from "classnames";
 import Link from "next/link";
 import { useState } from "react";
-
-const links = [
-  {
-    label: "AEON",
-    link: "/",
-  },
-  {
-    label: "Showcase",
-    link: "/",
-  },
-  {
-    label: "Docs",
-    link: "/",
-  },
-  {
-    label: "Blog",
-    link: "/",
-  },
-  {
-    label: "Analyitcs",
-    link: "/",
-  },
-  {
-    label: "Templates",
-    link: "/",
-  },
-  {
-    label: "Enterprise",
-    link: "/",
-  },
-];
+import navbarLinks from "@/constant/navbar_links.json";
 
 export function Header() {
   const [showSearchInput, setShowSearchInput] = useState(false);
@@ -44,7 +14,7 @@ export function Header() {
         <section className="container mx-auto flex justify-between items-center gap-6 relative">
           <nav className="flex-grow">
             <ul className="flex gap-8">
-              {links.map(({ label, link }, idx) => (
+              {navbarLinks.map(({ label, link }, idx) => (
                 <li className="hidden first:block sm:block" key={idx}>
                   <Link href={link}>{label}</Link>
                 </li>
@@ -141,7 +111,7 @@ export function Header() {
           </svg>
         </button>
         <ul className="flex flex-col gap-8 p-5 w-full fixed top-0 bg-[#f5f5f7] text-[black]">
-          {links.map(({ label, link }, idx) => {
+          {navbarLinks.map(({ label, link }, idx) => {
             return (
               <li key={idx}>
                 <Link href={link}>{label}</Link>

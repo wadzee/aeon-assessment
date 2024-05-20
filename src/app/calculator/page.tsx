@@ -16,11 +16,11 @@ export default function Calculator() {
   };
 
   return (
-    <main className="flex flex-col h-[93vh]">
-      <nav className="container mx-auto p-5">
+    <main className="flex flex-col h-[93vh] px-5">
+      <nav className="container mx-auto py-5">
         <Link href="/">Go Back</Link>
       </nav>
-      <article className="m-auto">
+      <article className="m-auto w-full max-w-[400px]">
         <h1>Sum of Two Numbers</h1>
         <form
           className="flex flex-col gap-6 mt-6 text-black"
