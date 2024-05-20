@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { FormEvent, useState } from "react";
 
 export default function TwoSumsPage() {
@@ -30,7 +31,10 @@ export default function TwoSumsPage() {
   };
 
   return (
-    <main className="flex h-screen">
+    <main className="flex flex-col h-screen">
+      <nav className="container mx-auto p-5">
+        <Link href="/">Go Back</Link>
+      </nav>
       <div className="m-auto w-[400px]">
         <h1 className="my-6">Find Two Sum</h1>
         <form className="flex flex-col gap-6" onSubmit={handleSubmit}>
